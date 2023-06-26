@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gonum/matrix/mat64"
+	"gonum.org/v1/gonum/mat"
 )
 
 // PoolLayer represents a pooling layer in a CNN
@@ -16,12 +16,14 @@ func NewPoolLayer() *PoolLayer {
 	}
 }
 
-// Forward performs forward propagation through the pooling layer
-func (pl *PoolLayer) Forward(input *mat64.Dense) *mat64.Dense {
+// Forward propagation through the pooling layer
+func (pl *PoolLayer) Forward(input *mat.Dense) *mat.Dense {
 	// TODO: Implement forward propagation logic
+	return nil
 }
 
 // Backward performs backpropagation through the pooling layer
-func (pl *PoolLayer) Backward(input *mat64.Dense) *mat64.Dense {
+func (pl *PoolLayer) Backward(input *mat.Dense) *mat.Dense {
 	// TODO: Implement backpropagation logic
+	return nil
 }

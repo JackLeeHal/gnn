@@ -20,7 +20,7 @@ func Sigmoid(x float64) float64 {
 	return 1.0 / (1.0 + math.Exp(-x))
 }
 
-// Derivative of the sigmoid function
+// SigmoidDerivative Derivative of the sigmoid function
 func SigmoidDerivative(x float64) float64 {
 	return Sigmoid(x) * (1 - Sigmoid(x))
 }
